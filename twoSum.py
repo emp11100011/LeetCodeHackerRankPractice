@@ -39,12 +39,14 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # This is a brute force solution
         # for iNumber in range(len(nums)):
         #     if nums[iNumber] <= target:
         #         for jNumber in range(iNumber+1, len(nums)):
         #                 if nums[iNumber] + nums[jNumber] == target:
         #                     return[iNumber, jNumber]
 
+        # This is the best solution using hashmap
         hashmap = {}
         for (i, n) in enumerate(nums):
             diff = target - n
